@@ -5,12 +5,11 @@
 
 const checkForSpam = function(message) {
   // твой код
-    let rejactedWordOne = `spam`;
-    let rejactedWordTwo = `sale`;
     let newMassage = message.toLowerCase();
-        
-        return newMassage.includes(rejactedWordOne) || newMassage.includes(rejactedWordTwo);
-           
+    if (newMassage.includes('spam') || newMassage.includes('sale')){
+      return true;
+    }
+      return false;  
 };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

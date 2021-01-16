@@ -20,12 +20,15 @@ const isLoginUnique = function(allLogins, login) {
 const addLogin = function(allLogins, login) {
       if (!isLoginUnique(allLogins, login)) {
         return `This login is already in use!`;
-      } else if (!isLoginValid(login)) {
+      } 
+      if (!isLoginValid(login)) {
         return `Error! Login must be from 4 to 16 characters!`;
-      } else {
+      } 
+      if (isLoginValid(login) && isLoginUnique(allLogins, login)) {
         logins.push(login)
         return `Login successfully! added!`;
       }
+      return logins.push(login);
 };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
