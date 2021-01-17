@@ -13,7 +13,7 @@ let total = 0;
         alert(`You put not number, try againe`);
         break;
       } else {
-        // alert(`You put not number, try againe or canseled`);
+        
         break;
       }
     }

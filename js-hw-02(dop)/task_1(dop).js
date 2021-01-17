@@ -14,8 +14,3 @@ function capitalize(string) {
 
 console.log(capitalize(`my dog go to the street and play with my ball`));
 console.log(capitalize('the quick brown fox'));
-// myArr.forEach(item => console.log(capitalizeFirstLetter(item)));
-
-// function capitalizeFirstLetter(string) {
-//     return string.charAt(0).toUpperCase() + string.slice(1);
-// }
